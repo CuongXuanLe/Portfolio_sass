@@ -3,14 +3,23 @@
 .display-2 {
     margin-bottom: 1rem;
     text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
 
-    display-2--intro {
+    &--intro {
         display: inline-block;
         font-weight: 700;
+        font-family: 'Poppins', sans-serif;
     }
 
     &--description {
-        font-style: 0.4rem;
+        margin-top: 1rem;
+        font-size: 1rem;
         display: block;
+        text-transform: none;
+        
+        @include media-breakpoint-up(lg){
+            font-size: 1.4rem;
+            display: inline-block;
+        }
     }
 }
